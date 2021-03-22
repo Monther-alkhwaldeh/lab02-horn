@@ -1,0 +1,21 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+footer{
+    clear:both;
+}
+h1{
+    text-align: center;
+    margin-top: 30px;
+}
+
+select{
+    display: block;
+    margin: 0 auto;
+    margin-top: 30px;
+}
