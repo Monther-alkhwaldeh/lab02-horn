@@ -133,10 +133,10 @@ $(document).ready(function(){
     $('#main2').html();
     $('#main2').show();
     $('#main1').hide();
-    $('#main2').empty();
+    $('#main1').empty();
     $('#select2').find('option').remove();
     $('#select2').show();
-    $('#select2').hide();
+    $('#select1').hide();
     page='page2';
 
     GalleryHorn2.ajaxsett2();
