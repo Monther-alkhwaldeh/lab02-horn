@@ -8,18 +8,34 @@
   <body>
     <header>
       <h1>The Gallery of Horns</h1>
-      <select class="keyword">
+      <select id="select1" class="keyword">
         <option value="default">Filter by Keyword</option>
       </select>
+      <select id="select2" class="keyword2">
+        <option value="default">Filter by Keyword</option>
+      </select>
+        <label for="title" > Sort By Title</label>
+        <input type="radio" name="Sort" id="title" value="title" >
+        <label for="horns" > Sort By Horns</label>
+        <input type="radio" name="Sort" id="horns" value="horns">
+        <button id="page1">Page1</button>
+        <button id="page2">Page2</button>
     </header>
-    <main>
-      <section class="photo-template">
-        <h2></h2>
-        <img src="" alt="">
-        <p></p>
+    <main id="main1"></main>
+    <main id="main2"></main>
+    
+    <template id="template2" type="text/x-tmpl-mustache">
+      <!-- <section class="photo-template"> -->
+        <section class="photo-template2">
+          <h2>{{title}}</h2>
+          <img src="{{image_url}}" alt="">
+          <p>{{description}}</p>
+        <!-- </section> -->
       </section>
-    </main>
+    </template>
+    
     <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="https://unpkg.com/mustache@latest"></script>
     <script type="text/javascript" src="app.js"></script>
     <footer>
       &copy; 2018 Code Fellows
